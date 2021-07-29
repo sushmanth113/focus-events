@@ -1,0 +1,19 @@
+<html>
+<body>
+<form id="form">
+  <input type="text" placeholder="text input">
+  <input type="password" placeholder="password">
+</form>
+<script>
+const form = document.getElementById('form');
+
+form.addEventListener('focusin', (event) => {
+  event.target.style.background = 'pink';
+});
+
+form.addEventListener('focusout', (event) => {
+  event.target.style.background = '';
+});
+</script>
+</body>
+</html>
